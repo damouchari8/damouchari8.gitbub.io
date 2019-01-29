@@ -132,6 +132,34 @@ p,
     padding-right: 12%;
   }
 }
+.data.challenges ul {
+  @media (min-width: $desktop) {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  @media (min-width: 1420px) {
+    padding-right: 12%;
+  }
+
+  text-align: left;
+}
+.who ul {
+  // @media (min-width: $desktop) {
+  //   padding-left: 38%;
+  // }
+  @media (min-width: 1420px) {
+    padding-right: 12%;
+  }
+
+  li {
+    list-style-type: circle;
+    margin-bottom: 4%;
+    margin-left: 4%;
+    @media (min-width: $tablet) {
+      margin-left: 0;
+    }
+  }
+}
 ul.links {
   padding: 0 15px;
   @media (min-width: $tablet) {
@@ -445,16 +473,16 @@ p.bottom-pad {
       rgba(199, 237, 255, 0.85) 70%,
       rgba(199, 237, 255, 1)
     ),
-    url("../img/hands-typing.jpg") no-repeat 83% top;
-  background-size: auto 400px;
+    url("../img/fan-hack-image-3.jpg") no-repeat 83% top;
+  background-size: auto 440px;
   @media (min-width: $tablet) {
     padding: 120px 75px 0;
     background: linear-gradient(
         rgba(199, 237, 255, 0.85) 30%,
         rgba(199, 237, 255, 1) 70%
       ),
-      url("../img/hands-typing.jpg") no-repeat left top;
-    background-size: 100% auto;
+      url("../img/fan-hack-image-3.jpg") no-repeat left top;
+    background-size: 180% auto;
   }
 }
 .lt-ie10 .about-top,
@@ -538,7 +566,7 @@ p.bottom-pad {
   @media (min-width: $desktop) {
     padding: 0;
   }
-  &:nth-child(3) {
+  &:nth-child(2n+3) {
     background: $black;
   }
 }
@@ -634,7 +662,7 @@ p.bottom-pad {
   }
 }
 .where-interior {
-  background: url("../img/where-interior4.jpg") no-repeat 50% center;
+  background: url("../img/where-interior.jpg") no-repeat 50% center;
   background-size: auto 450px;
   display: block;
   width: 100%;
@@ -804,11 +832,11 @@ p.bottom-pad {
   }
 }
 .partners-inner {
-  padding: 100px 0 135px;
+  padding: 100px 0 0;
   /*border-top: 1px solid $stroke;*/
   background: $lightgrey;
   @media (min-width: $tablet) {
-    padding: 100px 0 150px;
+    padding: 80px 0 0;
   }
 }
 .partners li {
@@ -821,6 +849,20 @@ p.bottom-pad {
   padding: 0 15px 80px;
   @media (min-width: $tablet) {
     padding: 0 30px 80px;
+  }
+}
+.lasalle img {
+  width: auto;
+  height: 80px;
+  @media (min-width: $tablet) {
+    height: 120px;
+  }
+}
+.mmu img {
+  width: auto;
+  height: 90px;
+  @media (min-width: $tablet) {
+    height: 130px;
   }
 }
 .opta img {
@@ -1532,7 +1574,7 @@ body.vjs-full-window {
   opacity: 1;
   visibility: visible; }
 
-@media �screen {
+@media screen {
   .vjs-user-inactive.vjs-playing .vjs-control-bar :before {
     content: ""; } }
 
