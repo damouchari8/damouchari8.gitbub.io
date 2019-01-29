@@ -1,6 +1,6 @@
 /* Header */
 .header-inner {
-	max-width: 400px;
+	max-width: 500px;
 	@media (min-width: $tablet) {
 		margin: 0 auto;
     max-width: 1200px;
@@ -53,13 +53,17 @@
       letter-spacing: 0;
 		}
 	}
-	.logo, {
+	.logo {
 		float: left;
-		margin: 16px 8px 0 15px;
+		margin: 8px 8px 0 15px;
 		transition: margin-left .2s;
 		@media (min-width: $tablet) {
 			margin: 15px 5px 5px;
-		}
+			img {
+				width: 100px;
+				height: auto;
+			}
+		}	 
 	}
 	.location {
 		margin-left: 6px;
@@ -75,8 +79,10 @@
 			float: right;
 			position: relative;
 			width: 27%;
+			min-width: 280px;
       box-sizing: content-box;
-      padding: 45px 6px 0 0;
+			padding: 45px 6px 0 0;
+			margin: 0;
 		}
 		@media (min-width: $desktop) {
       padding: 45px 20px 0 0;

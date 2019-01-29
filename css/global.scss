@@ -132,16 +132,19 @@ p,
     padding-right: 12%;
   }
 }
-.data.challenges ul {
-  @media (min-width: $desktop) {
-    margin-left: 0;
-    padding-left: 0;
-  }
-  @media (min-width: 1420px) {
-    padding-right: 12%;
-  }
+.data.challenges {
+  
+  ul {
+    @media (min-width: $desktop) {
+      margin-left: 0;
+      padding-left: 0;
+    }
+    @media (min-width: 1420px) {
+      padding-right: 12%;
+    }
 
-  text-align: left;
+    text-align: left;
+  }
 }
 .who ul {
   // @media (min-width: $desktop) {
@@ -153,10 +156,14 @@ p,
 
   li {
     list-style-type: circle;
+    list-style-position: inside;
+    font-size: 16px;
+    font-weight: 200;
     margin-bottom: 4%;
     margin-left: 4%;
     @media (min-width: $tablet) {
       margin-left: 0;
+      font-size: 20px;
     }
   }
 }
