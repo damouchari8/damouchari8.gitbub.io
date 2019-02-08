@@ -375,6 +375,7 @@ p.pre-head {
 }
 .about {
   background: $blue;
+  padding-bottom: 10px;
   @media (min-width: $tablet) {
 		margin: 0 auto;
     max-width: 1200px;
@@ -399,7 +400,7 @@ p.pre-head {
   width: 100%;
   text-decoration: none;
   display: block;
-  svg {
+  svg, .svg {
     position: absolute;
     top: 50%;
     right: 15px;
@@ -462,12 +463,6 @@ p.pre-head {
     padding: 0 100px 0 125px;
   }
 }
-.bottom-pad {
-  padding-bottom: 90px;
-  @media (min-width: $tablet) {
-    padding-bottom: 110px;
-  }
-}
 p.bottom-pad {
   padding-bottom: 50px;
 }
@@ -483,12 +478,7 @@ p.bottom-pad {
     url("../img/fan-hack-image-3.jpg") no-repeat 83% top;
   background-size: auto 440px;
   @media (min-width: $tablet) {
-    padding: 120px 75px 0;
-    background: linear-gradient(
-        rgba(199, 237, 255, 0.85) 30%,
-        rgba(199, 237, 255, 1) 70%
-      ),
-      url("../img/fan-hack-image-3.jpg") no-repeat left top;
+    padding: 0px 75px 0;
     background-size: 180% auto;
   }
 }
@@ -541,18 +531,20 @@ p.bottom-pad {
     fill: $textcol;
   }
 }
-.premier svg {
-  width: 191px;
+.premier .svg {
+  //width: 191px;
+  max-width: 100%;
   height: 245px;
   margin-top: 20px;
 }
-.academy svg {
-  width: 271px;
+.academy .svg {
+  //width: 271px;
+  max-width: 100%;
   height: 186px;
   margin: 59px 0 20px;
 }
 .data {
-  padding-top: 50px;
+  padding-top: 0px;
 }
 .recap {
   padding-top: 60px;
@@ -709,9 +701,9 @@ p.bottom-pad {
 /* Who & FAQ */
 .who,
 .faq {
-  padding: 110px 15px 0;
+  padding: 0px 15px 0;
   @media (min-width: $tablet) {
-    padding: 100px 30px 0;
+    padding: 20px 30px 0;
   }
   @media (min-width: $desktop) {
     @include clearfix
@@ -2228,6 +2220,16 @@ video::-webkit-media-text-track-display {
   line-height: 1.5;
   padding: 20px 24px;
   z-index: 1; }
+
+.center-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.border-image {
+  border-radius: 5px;
+}
 
 /* Fonts */
 @import "fonts";
