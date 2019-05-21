@@ -324,28 +324,33 @@ p.pre-head {
     padding-left: 35%;
     margin-left: -75px;
   }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 30px;
-    background: $yellow;
-    top: 65px;
-    z-index: 10;
-    left: 0;
-    @media (min-width: $tablet) {
-      left: -44px;
-      top: 85px;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 30px;
+      background: $yellow;
+      top: 65px;
+      z-index: 10;
+      left: 0;
+      @media (min-width: $tablet) {
+        left: -44px;
+        top: 85px;
+      }
+      @media (min-width: $desktop) {
+        left: 321px;
+      }
+      @media (min-width: $desktop) and (max-width: 1150px) {
+        left: 271px;
+      }
     }
-    @media (min-width: $desktop) {
-      left: 321px;
-    }
-    @media (min-width: $desktop) and (max-width: 1150px) {
-      left: 271px;
+    &.done {
+      &:after {
+        background: $darkgrey;
+      }
     }
   }
-}
 .schedule-second h3 {
   &:after {
     top: 35px;
@@ -561,6 +566,7 @@ p.bottom-pad {
   padding: 0 15px;
   @media (min-width: $tablet) {
     padding: 0 75px;
+    padding-left: 150px;
   }
   @media (min-width: $desktop) {
     padding: 0;
@@ -601,6 +607,28 @@ p.bottom-pad {
       left: 277px;
     }
   }
+
+  i.tick {
+    padding: 0px;
+    color: $yellow;
+    &.right_tick {
+      font-size: 1em;
+      padding-left: 0.5em;
+      @media (min-width: $tablet) {
+        display: none;
+      }
+    }
+    &.left_tick {
+      position: absolute;
+      top: 40%;
+      left: 20%;
+      font-size: 2em;
+      @media (max-width: $desktop) {
+        left: -100px;
+      }
+    }
+  }
+
 }
 .schedule-middle {
   padding-top: 0;
