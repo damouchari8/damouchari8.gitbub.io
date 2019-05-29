@@ -101,9 +101,9 @@ h3 {
   }
 }
 h4 {
-  font-size: 26px;
+  font-size: 40px;
 	letter-spacing: -.005em;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
   color: $midgrey;
 }
 p,
@@ -1123,6 +1123,12 @@ footer {
 }
 .social a:hover {
   color: $lightgrey;
+}
+
+.finalists {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0px 0px 0px;
 }
 
 /* Plugin styles */
